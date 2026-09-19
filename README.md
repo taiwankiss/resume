@@ -1,4 +1,4 @@
-# Wei Lee — Résumé
+# Resume
 
 A single-page, fully responsive résumé for 李建緯 (Wei Lee), built in a cyberpunk / holographic-HUD visual style: dark navy field, neon-cyan frame with an animated light streak, magenta accents, scanline grid background, and an animated radar graphic.
 
