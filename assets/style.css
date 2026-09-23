@@ -254,7 +254,7 @@ ul {
   font-size: clamp(13px, 1.3vw, 16px);
   color: var(--blue);
   letter-spacing: 0.06em;
-  margin-top: 6px;
+  margin-top: 3px;
 }
 
 .status-block {
@@ -302,6 +302,31 @@ ul {
 
   .sidebar {
     order: 2;
+  }
+}
+
+/* Phone: center the avatar+name block and scale it up; keep ID/status pinned right. */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__identity {
+    flex-direction: column;
+    text-align: center;
+    transform: scale(1.2);
+    transform-origin: center top;
+    margin: 6px 0 26px;
+  }
+
+  .name-block__row,
+  .name-block__zh-row {
+    justify-content: center;
+  }
+
+  .status-block {
+    align-self: flex-end;
   }
 }
 
@@ -520,7 +545,7 @@ ul {
 }
 
 .experience-item__bar {
-  width: 3px;
+  width: 1.5px;
   border-radius: 3px;
   background: var(--yellow);
   box-shadow: 0 0 8px oklch(83% 0.15 88 / 0.9), 0 0 3px oklch(83% 0.15 88);
