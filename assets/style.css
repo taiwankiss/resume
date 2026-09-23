@@ -241,6 +241,7 @@ ul {
   font-size: clamp(14px, 1.4vw, 17px);
   color: var(--ink);
   letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .name-block__caret {
@@ -256,7 +257,7 @@ ul {
   color: var(--blue);
   letter-spacing: 0.06em;
   line-height: 1;
-  margin-top: 12px;
+  margin-left: 6px;
 }
 
 .status-block {
@@ -322,9 +323,26 @@ ul {
     margin: 6px 0 26px;
   }
 
+  .name-block__row {
+    row-gap: 0;
+  }
+
   .name-block__row,
   .name-block__zh-row {
     justify-content: center;
+  }
+
+  .name-block__zh {
+    position: relative;
+    left: -3px;
+  }
+
+  .name-block__subtitle {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: -10px;
+    text-align: center;
+    font-size: calc(clamp(13px, 1.3vw, 16px) * 0.9);
   }
 
   .status-block {
