@@ -37,7 +37,9 @@
           <div class="avatar__ring" aria-hidden="true"></div>
           <div class="avatar__disc">
             <div class="avatar__disc-ring" aria-hidden="true"></div>
-            <img class="avatar__img" src="./assets/avatar3.jpg" alt="Wei Lee">
+            <video class="avatar__img" autoplay muted loop playsinline disablepictureinpicture poster="./assets/avatar3.jpg" aria-label="Wei Lee">
+              <source src="./assets/avatar-loop.mp4" type="video/mp4">
+            </video>
             <div class="avatar__wash" aria-hidden="true"></div>
           </div>
         </div>
@@ -129,9 +131,9 @@
               <path class="radar__sweep-fill" d="M60 60 L112 60 A52 52 0 0 0 96 23 Z"></path>
               <line class="radar__sweep-line" x1="60" y1="60" x2="112" y2="60"></line>
             </g>
-            <circle class="radar__blip" cx="71" cy="52" r="2.2" fill="oklch(80% 0.18 330)"></circle>
-            <circle class="radar__blip radar__blip--b" cx="26" cy="84" r="1.8" fill="oklch(85% 0.18 195)"></circle>
-            <circle class="radar__blip radar__blip--c" cx="78" cy="96" r="1.6" fill="oklch(85% 0.18 195)"></circle>
+            <circle class="radar__blip" cx="71" cy="52" r="2.2" fill="oklch(83% 0.15 88)"></circle>
+            <circle class="radar__blip radar__blip--b" cx="26" cy="84" r="1.8" fill="oklch(85% 0.18 255)"></circle>
+            <circle class="radar__blip radar__blip--c" cx="78" cy="96" r="1.6" fill="oklch(85% 0.18 255)"></circle>
           </svg>
           <div class="radar__caption">SCANNING // OPEN TO WORK</div>
         </div>
@@ -203,6 +205,15 @@
     </div>
   </div>
 </div>
+
+<script>
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach(function (v) {
+      v.removeAttribute('autoplay');
+      v.pause();
+    });
+  }
+</script>
 
 </body>
 </html>
