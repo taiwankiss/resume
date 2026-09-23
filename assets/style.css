@@ -207,6 +207,7 @@ ul {
   font-family: 'Orbitron', sans-serif;
   font-size: clamp(26px, 3.6vw, 40px);
   font-weight: 900;
+  line-height: 1;
   letter-spacing: 0.04em;
   color: var(--ink);
   text-shadow: 0 0 14px oklch(75% 0.16 255 / 0.9);
@@ -254,7 +255,8 @@ ul {
   font-size: clamp(13px, 1.3vw, 16px);
   color: var(--blue);
   letter-spacing: 0.06em;
-  margin-top: 3px;
+  line-height: 1;
+  margin-top: 12px;
 }
 
 .status-block {
