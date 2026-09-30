@@ -2,3 +2,6 @@
 *.zip
 /ref/
 /head/
+/motion-reel/
+/.playwright-mcp/
+/.ds-scratch/
